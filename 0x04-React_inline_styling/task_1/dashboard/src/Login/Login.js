@@ -1,20 +1,20 @@
-import React from "react";
-import { StyleSheet, css } from "aphrodite";
+import React from 'react';
+import { StyleSheet, css } from 'aphrodite';
 
 function Login() {
   return (
-    <main role="main" className={css(styles.login)}>
+    <main role='main' className={css(styles.login)}>
       <p>Login to access the full dashboard</p>
-      <label htmlFor="email">Email</label>
-      <input className={css(styles.inp)} type="email" name="email" id="email" />
-      <label htmlFor="password">Password</label>
+      <label htmlFor='email'>Email</label>
+      <input className={css(styles.inp)} type='email' name='email' id='email' />
+      <label htmlFor='password'>Password</label>
       <input
         className={css(styles.inp)}
-        type="password"
-        name="password"
-        id="password"
+        type='password'
+        name='password'
+        id='password'
       />
-      <button className={css(styles.btn)} type="button">
+      <button className={css(styles.btn)} type='button'>
         OK
       </button>
     </main>
@@ -23,14 +23,14 @@ function Login() {
 
 const styles = StyleSheet.create({
   login: {
-    padding: "16px 24px",
+    padding: '16px 24px',
   },
   inp: {
-    margin: "4px",
+    margin: '4px',
   },
   btn: {
-    margin: "4px",
-    cursor: "pointer",
+    margin: '4px',
+    cursor: 'pointer',
   },
 });
 

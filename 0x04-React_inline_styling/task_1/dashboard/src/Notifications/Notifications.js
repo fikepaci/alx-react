@@ -1,10 +1,10 @@
-import React, { Component, Fragment } from "react";
-import close_icon from "../assets/close-icon.png";
-import NotificationItem from "./NotificationItem";
-import PropTypes from "prop-types";
-import NotificationItemShape from "./NotificationItemShape";
-import "./Notifications.css";
-import { StyleSheet, css } from "aphrodite";
+import React, { Component, Fragment } from 'react';
+import close_icon from '../assets/close-icon.png';
+import NotificationItem from './NotificationItem';
+import PropTypes from 'prop-types';
+import NotificationItemShape from './NotificationItemShape';
+import './Notifications.css';
+import { StyleSheet, css } from 'aphrodite';
 
 class Notifications extends Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class Notifications extends Component {
             <p>Here is the list of notifications</p>
             <ul>
               {listNotifications.length === 0 && (
-                <NotificationItem value="No new notification for now" />
+                <NotificationItem value='No new notification for now' />
               )}
               {listNotifications.map((notification) => (
                 <NotificationItem
@@ -45,25 +45,25 @@ class Notifications extends Component {
               ))}
             </ul>
             <button
-              type="button"
-              aria-label="Close"
-              onClick={() => console.log("Close button has been clicked")}
+              type='button'
+              aria-label='Close'
+              onClick={() => console.log('Close button has been clicked')}
               style={{
-                display: "inline-block",
-                position: "absolute",
-                top: "56px",
-                right: "16px",
+                display: 'inline-block',
+                position: 'absolute',
+                top: '56px',
+                right: '16px',
                 background: 0,
                 border: 0,
-                outline: "none",
-                cursor: "pointer",
+                outline: 'none',
+                cursor: 'pointer',
                 zIndex: 1,
               }}
             >
               <img
                 src={close_icon}
-                alt=""
-                style={{ width: "8px", height: "8px" }}
+                alt=''
+                style={{ width: '8px', height: '8px' }}
               />
             </button>
           </div>
@@ -85,13 +85,13 @@ Notifications.propTypes = {
 
 const styles = StyleSheet.create({
   notifications: {
-    border: "thin dotted #e0344a",
-    padding: "4px 16px",
-    float: "right",
+    border: 'thin dotted #e0344a',
+    padding: '4px 16px',
+    float: 'right',
   },
   menuItem: {
-    textAlign: "right",
-    marginRight: "16px",
+    textAlign: 'right',
+    marginRight: '16px',
   },
 });
 
